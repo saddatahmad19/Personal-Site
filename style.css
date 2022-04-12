@@ -1,33 +1,78 @@
 
 
 .heading {
-    padding: 0px 1%;
+    
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(134, 203, 249), rgb(150, 244, 215));
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to right, blue, red);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.content {
+    width: 100%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: white;
+    padding:0;
     text-align: center;
+    margin: 0;
+    transition: 1s;
 }
 
-.menu
-{
- margin-top:5px;
- margin-bottom:5px;
- background-color:#4c4c4c;
- color:white;
- position:relative;
- display:inline-block;
- text-align:center;
- padding:0px 0px 0px 0px;
- border:2px solid #4c4c4c;
-    width:10%;
-}
-#menuitem1
-{
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px; 
-    text-align:center;
-    margin:auto;
-}
-#menuitem4
-{
-    border-top-right-radius:5px;
-    border-bottom-right-radius:5px; 
+nav.black ul {
+    background: #000;
 
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }

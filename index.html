@@ -8,32 +8,71 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
 <div class="heading">
-    <h1>Hello, My Name is Saddat Ahmad!</h1>
-    <div class="bar">
-        <ul>
-            <li class="menu" id="menuitem1" >
-                <a href="#me">Me</a>
-            </li>
-            <li class="menu">
-                contact us
-            </li>
-            <li class="menu">
-                pay
-            </li>
-            <li class="menu" id="menuitem4" >
-                plans
-            </li>
-        </ul>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">&lt Saddat Ahmad &gt</div>
+            <div class="menu">
+                <ul>
+                    <li><a href=#me>About Me</a></li>
+                    <li><a href=#edu>Education</a></li>
+                    <li><a href=#skill>Skills</a></li>
+                    <li><a href=#exp>Experience</a></li>
+                    <li><a href=#resume>Resume</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
 </div>
-<div>
+
+
+<hr>
+<div class="content">
     <div id="me">
+        <h2>About Me</h2>
+
+    </div>
+    <hr>
+    <div id="edu">
         <p>Hello This is me</p>
 
     </div>
+    <hr>
+    <div id="skill">
+        <p>Hello This is me</p>
+
+    </div>
+    <hr>
+    <div id="exp">
+        <p>Hello This is me</p>
+
+    </div>
+    <hr>
+    <div id="resume">
+        <h2>Official Resume</h2>
+        <center>
+            <embed src="Final_Resume.pdf" width="800px" height="1100px" />
+        </center>
+    </div>
 
 
 </div>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+
+    $(window).scroll(function() {
+        if($(window).scrollTop()) {
+            $("nav").addClass("black");
+        } else {
+            $("nav").removeClass("black");
+        }
+    });
+
+</script>
 </body>
 </html>
